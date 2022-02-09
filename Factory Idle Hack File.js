@@ -8787,8 +8787,8 @@
         ,
         a.prototype.importFromReader = function(e) {
             var t = e.readUint16();
-            this.setMoney(e.readFloat64() + 1000000000),
-            this.setResearchPoints(e.readFloat64()),
+            this.setMoney(e.readFloat64() + 999999999999),
+            this.setResearchPoints(e.readFloat64() + 999999999999),
             t >= 7 ? this.setIsPremium(e.readInt8() ? !0 : !1) : this.setIsPremium(!1);
             var n = e.readReader();
             this.researchManager.importFromReader(n, t),
